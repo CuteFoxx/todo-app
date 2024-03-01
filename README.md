@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/todo-app-WmLRabBTPf)
-- Live Site URL: [](https://todo-app-rouge-theta.vercel.app/)
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/todo-app-WmLRabBTPf)
+- Live Site URL: [Live site](https://todo-app-rouge-theta.vercel.app/)
 
 ## My process
 
