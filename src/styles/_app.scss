@@ -1,0 +1,9 @@
+@use "src/styles/variables" as *;
+
+.app__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: inherit;
+}

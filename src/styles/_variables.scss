@@ -1,0 +1,53 @@
+//using css variables to simplify dark theme swtich cause u cant change scss variables on fly as they compile into raw css;
+:root {
+  --bgc: #fafafa;
+  --bg-image: top no-repeat url(/bg-desktop-light.jpg);
+  --toggle-image: url(/icon-moon.svg);
+  --input-text-clr: #393a4b;
+  --input-bgc: #ffffff;
+  --primary-clr: #494c6b;
+  --secondary-clr: #9495a5;
+  --circle-border-clr: #e3e4f1;
+}
+:root:has(.dark) {
+  --bgc: #171823;
+  --bg-image: top no-repeat url(/bg-desktop-dark.jpg);
+  --toggle-image: url(/icon-sun.svg);
+  --input-text-clr: #c8cbe7;
+  --input-bgc: #25273d;
+  --primary-clr: #c8cbe7;
+  --secondary-clr: #5b5e7e;
+  --circle-border-clr: #393a4b;
+}
+
+//colors
+$white: #ffffff;
+$bright-blue: #3a7cfd;
+$bgc: var(--bgc);
+$gradient: linear-gradient(#55ddff, #c058f3);
+$input-text-clr: var(--input-text-clr);
+$input-bgc: var(--input-bgc);
+$primary-clr: var(--primary-clr);
+$secondary-clr: var(--secondary-clr);
+$circle-border-clr: var(--circle-border-clr);
+
+//e.t.c.
+$bg-image: var(--bg-image);
+$toggle-image: var(--toggle-image);
+$transition: 0.4s ease;
+$border-radius: 0.3rem;
+
+//font-sizes
+$fs-primary: 1.125rem; //18px
+$fs-sm: 0.875rem; //14px
+$fs-primary-mobile: 0.75rem;
+
+//375px max width
+@media (max-width: 23.5em) {
+  :root {
+    --bg-image: top/contain no-repeat url(/bg-mobile-light.jpg);
+  }
+  :root:has(.dark) {
+    --bg-image: top no-repeat url(/bg-mobile-dark.jpg);
+  }
+}

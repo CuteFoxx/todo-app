@@ -1,0 +1,28 @@
+@use "src/styles/variables" as *;
+
+.todo__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    color: $white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1.5625rem;
+    text-transform: uppercase;
+  }
+
+  .theme-toggle {
+    border: none;
+    cursor: pointer;
+
+    width: 1.5625rem;
+    height: 1.625rem;
+
+    background: $toggle-image;
+  }
+  .dark:has(.theme-toggle) {
+    background: $toggle-image;
+  }
+}

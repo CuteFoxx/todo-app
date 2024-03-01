@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.todo__form {
+  position: relative;
+  width: inherit;
+
+  height: 4rem;
+
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  &-input {
+    border: none;
+    border-radius: $border-radius;
+
+    font-size: $fs-primary;
+    color: $input-text-clr;
+    background-color: $input-bgc;
+    transition: background $transition;
+
+    width: inherit;
+    max-width: 100%;
+    height: inherit;
+
+    padding: 1.25em 1.5em;
+    padding-left: 3.75em;
+  }
+
+  &-circle {
+    z-index: 2;
+    position: absolute;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border: 1px solid $circle-border-clr;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 1.25em;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 23.5em) {
+  .todo__form-input {
+    -webkit-box-shadow: 0px 5px 8px -2px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 5px 8px -2px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 5px 8px -2px rgba(0, 0, 0, 0.22);
+  }
+}
